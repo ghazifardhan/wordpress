@@ -187,37 +187,39 @@ jQuery(document).ready(function($){
             e.preventDefault();
         });
     }
-    function accordion() {
-        // Runs when the image button is clicked.
-        jQuery('body').on('click','.accordion-title', function(e){
-            var $this = $(this),
-                accordion_content  = $this.closest('.accordion-content'),
-                accordion_item  = $this.closest('.accordion-item'),
-                accordion_details  = accordion_item.find('.accordion-details'),
-                accordion_all_items  = accordion_content.find('.accordion-item'),
-                accordion_icon  = accordion_content.find('.accordion-icon');
 
-            accordion_icon.each(function () {
-                $(this).addClass('fa-plus');
-                $(this).removeClass('fa-minus');
-            });
-            accordion_all_items.each(function () {
-                $(this).find('.accordion-details').slideUp();
-            });
+    // Disable Accordion
+    // function accordion() {
+    //     // Runs when the image button is clicked.
+    //     jQuery('body').on('click','.accordion-title', function(e){
+    //         var $this = $(this),
+    //             accordion_content  = $this.closest('.accordion-content'),
+    //             accordion_item  = $this.closest('.accordion-item'),
+    //             accordion_details  = accordion_item.find('.accordion-details'),
+    //             accordion_all_items  = accordion_content.find('.accordion-item'),
+    //             accordion_icon  = accordion_content.find('.accordion-icon');
 
-            if( accordion_details.is(":visible")){
-                accordion_details.slideUp();
-                $this.find('.accordion-icon').addClass('fa-plus');
-                $this.find('.accordion-icon').removeClass('fa-minus');
-            }
-            else{
-                accordion_details.slideDown();
-                $this.find('.accordion-icon').addClass('fa-minus');
-                $this.find('.accordion-icon').removeClass('fa-plus');
-            }
-            e.preventDefault();
-        });
-    }
+    //         accordion_icon.each(function () {
+    //             $(this).addClass('fa-plus');
+    //             $(this).removeClass('fa-minus');
+    //         });
+    //         accordion_all_items.each(function () {
+    //             $(this).find('.accordion-details').slideUp();
+    //         });
+
+    //         if( accordion_details.is(":visible")){
+    //             accordion_details.slideUp();
+    //             $this.find('.accordion-icon').addClass('fa-plus');
+    //             $this.find('.accordion-icon').removeClass('fa-minus');
+    //         }
+    //         else{
+    //             accordion_details.slideDown();
+    //             $this.find('.accordion-icon').addClass('fa-minus');
+    //             $this.find('.accordion-icon').removeClass('fa-plus');
+    //         }
+    //         e.preventDefault();
+    //     });
+    // }
     function at_site_origin_grid() {
         $('.panel-grid').each(function(){
             var count = $(this).children('.panel-grid-cell').length;

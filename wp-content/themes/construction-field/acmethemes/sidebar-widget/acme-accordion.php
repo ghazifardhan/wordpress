@@ -287,13 +287,14 @@ if ( ! class_exists( 'Construction_Field_Accordion' ) ) {
 		                            if ( $accordion_query->have_posts() ):
                                         $i=1;
 			                            while( $accordion_query->have_posts() ):$accordion_query->the_post();
-				                            $accordion_icon = $i!=1?'fa-plus':'fa-minus'
+				                            // $accordion_icon = $i!=1?'fa-plus':'fa-minus'
+				                            $accordion_icon = $i!=1?'fa-plus':'fa-plus'
 				                            ?>
                                             <div class="accordion-item <?php echo esc_attr( $animation1 );?>">
-					                            <?php the_title( sprintf( '<h3 class="accordion-title"><a href="%s" rel="bookmark"><i class="accordion-icon fa '.$accordion_icon.'"></i>', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-                                                <div class="accordion-details">
+					                            <?php the_title( sprintf( '<h3 class="accordion-title"><i class="accordion-icon fa '.$accordion_icon.'"></i>', esc_url( get_permalink() ) ), '</h3>' ); ?>
+                                                <!-- <div class="accordion-details">
 						                            <?php the_excerpt();?>
-                                                </div>
+                                                </div> -->
                                             </div>
 				                            <?php
                                         $i++;

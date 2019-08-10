@@ -147,10 +147,13 @@ if ( ! function_exists( 'construction_field_header' ) ) :
         $construction_field_feature_info_display_options = $construction_field_customizer_all_values['construction-field-feature-info-display-options'];
         if( 1 == $construction_field_enable_header_top ){
             ?>
-            <div class="top-header">
+            <div class="top-header construction-field-sticky">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 text-left">
+                            <div class="at-first-level-nav at-display-inline-block text-right">
+                                Area Layanan: Jabodetabek
+                            </div>
                             <?php
                                 $construction_field_header_top_menu_display_selection = $construction_field_customizer_all_values['construction-field-header-top-menu-display-selection'];
                                 $construction_field_header_top_news_display_selection = $construction_field_customizer_all_values['construction-field-header-top-news-display-selection'];
@@ -168,6 +171,24 @@ if ( ! function_exists( 'construction_field_header' ) ) :
                             ?>
                         </div>
                         <div class="col-sm-6 text-right">
+                        
+                            <div class="at-first-level-nav at-display-inline-block text-right">
+                                Hubungi Kami:
+                                <ul class="socials at-display-inline-block">
+                                    <li>
+                                        <a href="https://api.whatsapp.com/send?phone=6281226126567&text=Saya%20tertarik%20mengenai%20bisnis%20anda" target="_blank">
+                                            <i class="fa fa-envelope"></i>
+                                            stivon@prasaka.com
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://api.whatsapp.com/send?phone=6281226126567&text=Saya%20tertarik%20mengenai%20bisnis%20anda" target="_blank">
+                                            <i class="fa fa-whatsapp"></i>
+                                            +62 812 2612 6567 (Stivon)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                             <?php
                                 if( 'right' == $construction_field_header_top_menu_display_selection ){
                                     do_action('construction_field_action_top_menu');
