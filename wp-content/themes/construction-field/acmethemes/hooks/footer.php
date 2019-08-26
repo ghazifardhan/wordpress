@@ -92,9 +92,6 @@ if ( ! function_exists( 'construction_field_footer' ) ) :
 			                            <?php echo wp_kses_post( $construction_field_customizer_all_values['construction-field-footer-copyright'] ); ?>
                                     </p>
 	                            <?php endif;
-	                            echo '<div class="site-info at-display-inline-block">';
-	                            printf( esc_html__( '%1$s by %2$s', 'construction-field' ), 'Construction Field', '<a href="http://www.acmethemes.com/" rel="designer">Acme Themes</a>' );
-	                            echo '</div><!-- .site-info -->';
 	                            ?>
                             </div>
                         </div>

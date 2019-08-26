@@ -54,6 +54,8 @@ define( 'AUTH_SALT',        'o@s c!/w_+p0r`BH.N [<ekq?cGIa^3dei H?}0_GqP^}:~k `H
 define( 'SECURE_AUTH_SALT', '-x7BhVu^y313y{y|p}.-qH4P`F@5dfcX80},f7%3HY S&73Xeh_2~h]K.;e4/RCU' );
 define( 'LOGGED_IN_SALT',   'xFhc!^3*}_/M^T9Q3Mc3pT~t(~5Re2]]5k)0-h]{@Src90d)k+hqgHe.Z_@&{v>.' );
 define( 'NONCE_SALT',       'h10,26LLcsrx/Cj^8H6:Oi$:unW:}?p-Rvh&&A_WWvGZ0SdDX]w?+#N8f)8f.,-B' );
+define( 'WP_HOME', 'http://www.prasaka.com' );
+define( 'WP_SITEURL', 'http://www.prasaka.com' );
 
 /**#@-*/
 
