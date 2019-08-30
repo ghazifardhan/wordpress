@@ -178,13 +178,13 @@ if ( ! function_exists( 'construction_field_header' ) ) :
                                     <li>
                                         <a href="https://api.whatsapp.com/send?phone=6281226126567&text=Saya%20tertarik%20mengenai%20bisnis%20anda" target="_blank">
                                             <i class="fa fa-envelope"></i>
-                                            stivon@prasaka.com
+                                            steve@prasaka.com
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://api.whatsapp.com/send?phone=6281226126567&text=Saya%20tertarik%20mengenai%20bisnis%20anda" target="_blank">
                                             <i class="fa fa-whatsapp"></i>
-                                            +62 812 2612 6567 (Stivon)
+                                            +62 812 2612 6567 (Steve)
                                         </a>
                                     </li>
                                 </ul>
